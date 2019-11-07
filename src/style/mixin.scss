@@ -1,0 +1,13 @@
+//预定义好的变量放在此文件中
+$baseFontSize: 75;
+
+//flex两端对齐
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@function px2rem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
